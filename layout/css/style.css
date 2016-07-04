@@ -1,0 +1,272 @@
+body, ul, li, button {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    border:0;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+.container{
+    max-width:940px;
+    margin:0 auto;
+    padding:10px;
+}
+
+.page-title{
+    text-transform:uppercase;
+}
+
+.content{
+    overflow:hidden;
+}
+
+.mobile-btn{
+    display:none;
+}
+
+/***Header***/
+.menu{
+    padding:35px 0px;
+    margin-bottom:40px;
+    overflow:hidden;
+    border-bottom:2px solid #fea01a;
+}
+
+.menu-it{
+    float:left;
+}
+.menu-it.lst{
+    float:right;
+}
+
+.menu-lk{
+    display:block;
+}
+
+.logo{
+    width:104px;
+    height:30px;
+    text-indent:-9999px;
+    background: url(../img/logo.jpg) no-repeat center center transparent;
+}
+
+.cart{
+    width:17px;
+    height:20px;
+    text-indent:-9999px;
+    background: url(../img/cart.jpg) no-repeat center center transparent;
+}
+/***Header***/
+
+/***Sidebar***/
+.sidebar{
+    width:20%;
+    float:left;
+    margin-right:1em;
+}
+
+.fltr-tit{
+    text-transform: uppercase;
+}
+
+.fltr-szs-lt{
+    overflow:hidden;
+}
+
+.fltr-szs-it{
+    float:left;
+    width:15%;
+    margin:0.3em 0.4em;
+    padding:6px 0;
+    border:1px solid #aaa;
+    text-align: center;
+    cursor:pointer;
+}
+
+.fltr-szs-it:hover{
+    border-color:#ff9f1c;
+}
+
+.fltr-szs{
+    font-size:0.7em;
+    background:transparent;
+    color:#aaa;
+}
+
+.fltr-szs-it:hover .fltr-szs{
+    color:#444;
+    cursor:pointer;
+}
+
+.fltr-szs-it.active{
+    border-color:#ff9f1c;
+}
+.fltr-szs-it.active .fltr-szs{
+    color:#444;
+}
+/***Sidebar***/
+
+/***Products***/
+/*products header*/
+.products-hdr{
+    overflow:hidden;
+}
+.prd-order{
+    float:right;
+    height: 30px;
+    padding: 0px 10px;
+}
+/*products header*/
+
+.products{
+    float:right;
+    width:77%;
+}
+
+.product-lt{
+    overflow:hidden;
+}
+
+.product-it{
+    display:block;
+    width:33.333%;
+    height:450px;
+    margin:10px 0px;
+    float:left;
+    text-align:center;
+}
+
+.prd-img-wrapper{
+    height: 333px;
+    display: inline-block;
+}
+
+.prd-img{
+    display:inline-block;
+    max-width:100%;
+    max-height:100%;
+}
+
+.prd-tit{
+    font-size: 1.2em;
+    min-height: 2.1em;
+    width: 90%;
+}
+
+.prd-wrap{
+    clear:both;
+    overflow:hidden;
+}
+
+.prd-price{
+    text-align:right;
+    float:left;
+}
+
+.prd-prc{
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+.prd-par{
+}
+
+.prd-cart{
+    float:left;
+    margin: 5px 0px 0px 1em;
+    display:inline-block;
+    width:52px;
+    height:34px;
+    text-indent:-9999px;
+    background: url(../img/cart-btn.jpg) no-repeat center center transparent;
+}
+/***Products***/
+
+/***Footer***/
+.footer{
+    margin-top: 135px;
+    text-align:center;
+    clear:both;
+    background:#000;
+    color:#aaa;
+}
+.copyright{
+    font-size:0.7em;
+    margin:0;
+    font-weight: bold;
+}
+/***Footer***/
+
+/*Media Queries*/
+@media screen and (max-width: 640px) {
+    .container{
+        max-width:565px;
+    }
+
+    .page-title{
+        text-align:center;
+    }
+
+    .mobile-btn{
+        cursor:pointer;
+        display: block;
+        color: #666;
+        float: left;
+        padding: 30px 0;
+        width: 50%;
+        text-align: center;
+        border: 1px solid #666;
+    }
+    .mobile-btn.order{
+        border-left:0px;
+        width:99%;
+    }
+
+    /***Products***/
+    .products{
+        float: none;
+        width: 100%;
+    }
+    .prd-order{
+        display:none;
+        position:absolute;
+    }
+    .product-it{
+        width:50%;
+    }
+    /***Products***/
+
+    /***Sidebar***/
+    .sidebar{
+        width: auto;
+        float: none;
+        margin-right:0em;
+    }
+    .filters-wrapper{
+        display:none;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        margin-top: -212px;
+        margin-left: -10px;
+        padding-bottom: 50px;
+    }
+    .fltrs-wppr{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .fltr-szs-it {
+        width: 12%;
+        margin: 0.7em;
+    }
+    /***Sidebar***/
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+ <html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Teste Vaga Front End</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/js.js"></script>
+</head>
+<body onLoad="loadList()">
+	
+	 <header class="menu">
+	 	<div class="container">
+		    <nav>
+		        <ul class="menu-lt">
+		            <li class="menu-it"><a class="menu-lk logo" href="http://www.profite.com.br" target="_blank">Profite</a></li>
+		            <li class="menu-it lst"><a class="menu-lk cart" href="#">Carrinho</a></li>
+		        </ul>
+		    </nav>
+	    </div>
+	</header>
+ 
+
+	<h2 class="page-title container">Vestidos</h2>
+
+ 	<div class="content container">
+ 		<aside class="sidebar">
+			<h3 class="mobile-btn filter">Filtrar</h3>
+
+			<div id="filters" class="filters-wrapper">
+				<div class="fltrs-wppr">
+					<section id="colors">
+					    <h4 class="fltr-tit">Cores</h4>
+					    <ul>
+					    	<li><input class="cbx-colors" type="checkbox" name="colors" value="amarelo"> Amarelo</li>
+					    	<li><input class="cbx-colors" type="checkbox" name="colors" value="azul"> Azul</li>
+					    	<li><input class="cbx-colors" type="checkbox" name="colors" value="branco"> Branco</li>
+					    	<li><input class="cbx-colors" type="checkbox" name="colors" value="cinza"> Cinza</li>
+					    	<li><input class="cbx-colors" type="checkbox" name="colors" value="laranja"> Laranja</li>
+					    </ul>
+					</section>
+					<section id="sizes">
+					    <h4 class="fltr-tit">Tamanhos</h4>
+					    <ul class="fltr-szs-lt">
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="P">P</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="M">M</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="G">G</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="GG">GG</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="U">U</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="36">36</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="38">38</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="40">40</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="42">42</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="44">44</button></li>
+					    	<li class="fltr-szs-it" onClick="sizeActive()"><button class="fltr-szs" name="size" value="46">46</button></li>
+					    </ul>
+					</section>
+					<section id="prices">
+					    <h4 class="fltr-tit">Faixa de Preço</h4>
+					    <ul>
+					    	<li><input type="checkbox" name="prices" value="prc-0-50"> de R$0 até R$50</li>
+					    	<li><input type="checkbox" name="prices" value="prc-51-150"> de R$51 até R$150</li>
+					    	<li><input type="checkbox" name="prices" value="prc-151-300"> de R$151 até R$300</li>
+					    	<li><input type="checkbox" name="prices" value="prc-301-500"> de R$301 até R$500</li>
+					    	<li><input type="checkbox" name="prices" value="prc-501-fim"> a partir de R$501</li>
+					    </ul>
+					</section>
+			    </div>
+		    </div>
+		</aside>
+
+		<section id="products" class="products">
+			<header class="products-hdr">
+				<h3 class="mobile-btn order">Ordenar</h3>
+				<select class="prd-order">
+				  <option value="MaisRecentes">Mais Recentes</option>
+				  <option value="MaiorPreco">Maior Preço</option>
+				  <option value="MenorPreco">Menor Preço</option>
+				</select>
+			</header>
+			<ul id="ProductList" class="product-lt">
+				
+			</ul>
+		</section>
+	</div>
+ 
+	<footer class="footer">
+		<div class="container">
+	    	<p class="copyright">Profite - Voluntários da Pátria, 301/702 Botafogo - RJ</p>
+	    </div>
+	</footer>
+
+
+</body>
+</html>
